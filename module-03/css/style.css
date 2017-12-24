@@ -1,59 +1,62 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 body {
-    font-family: "arial", sans-serif;
-    background-image: url(../img/background.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+  font-family: "arial", sans-serif;
+  background-image: url(../img/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .wrapper {
-    width: 480px;
-    margin: 200px auto;
-    padding: 55px 35px 40px 35px;
-    background-color: #fff;
+  width: 480px;
+  margin: 200px auto;
+  padding: 55px 35px 40px 35px;
+  background-color: #fff;
+}
+.article .subtitle {
+  font-weight: 700;
 }
 .border {
-    border-top: 50px;
-    border-width: 1px;
-    border-style: solid;
-    border-color: #4e5050;
-    opacity: 0.2;
-    margin-bottom: 50px;
-    margin-top: 50px;
+  border-top: 50px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #4e5050;
+  opacity: 0.2;
+  margin-bottom: 50px;
+  margin-top: 50px;
 }
 .title {
-    margin-bottom: 30px;
-    font-family: "Pathway Gothic One", sans-serif;
-    font-size: 25px;
-    color: #263555;
+  margin-bottom: 30px;
+  font-family: "Pathway Gothic One", sans-serif;
+  font-size: 25px;
+  color: #263555;
 }
 .subtitle {
-    margin-bottom: 20px;
-    font-size: 14px;
-    color: #263555;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #263555;
 }
 .text {
-    margin-bottom: 25px;
-    font-size: 12px;
-    color: #4e5050;
+  margin-bottom: 25px;
+  font-size: 12px;
+  color: #4e5050;
 }
 .article img {
-    margin-bottom: 25px;
+  margin-bottom: 25px;
 }
 .list {
-    list-style-type: none;
+  list-style-type: none;
 }
 .column-list {
-    list-style-type: none;
-    column-count: 2;
-    margin-left: 25px;
+  list-style-type: none;
+  column-count: 2;
+  margin-left: 25px;
 }
 .column-list li {
-    margin-bottom: 20px;
-    font-size: 14px;
-    font-weight: 700;
-    color: #263555;
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #263555;
 }
