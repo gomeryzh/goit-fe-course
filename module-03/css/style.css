@@ -16,9 +16,6 @@ body {
   padding: 55px 35px 40px 35px;
   background-color: #fff;
 }
-.article {
-  padding-bottom: 25px;
-}
 .article .subtitle {
   font-weight: 700;
 }
@@ -56,6 +53,7 @@ body {
   list-style-type: none;
   column-count: 2;
   margin-left: 25px;
+  margin-top: 40px;
 }
 .column-list li {
   margin-bottom: 20px;
@@ -65,4 +63,13 @@ body {
 }
 .article .list li {
   padding-top: 20px;
+}
+.subject {
+  padding-bottom: 5px;
+}
+.center {
+  padding-bottom: 50px;
+  border-bottom: 1px solid #4e5050;
+  margin-bottom: 50px;
+  margin-top: 50px;
 }
