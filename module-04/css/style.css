@@ -1,0 +1,54 @@
+body {
+  font-family: "arial", sans-serif;
+  background-image: url(../img/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 230px;
+}
+.wrapper {
+  width: 1024px;
+  margin: auto;
+  padding: 110px 70px 80px 60px;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+.clearfix {
+  display: table;
+  content: "";
+  clear: both;
+}
+.main {
+    margin-bottom: 30px;
+}
+.main .article img {
+  float: left;
+}
+.main .article {
+  width: 71%;
+  background: teal;
+  margin-right: 6%;
+  display: inline-block;
+  vertical-align: top;
+}
+.main .aside {
+  width: 22%;
+  background: red;
+  display: inline-block;
+  vertical-align: top;
+}
+.content .article {
+  width: 71%;
+  background: teal;
+  margin-right: 6%;
+  display: inline-block;
+  vertical-align: top;
+}
+.content .aside {
+  width: 22%;
+  background: red;
+  display: inline-block;
+  vertical-align: top;
+}
+.content .article .list {
+  column-count: 2;
+}
