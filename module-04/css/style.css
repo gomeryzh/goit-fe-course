@@ -40,6 +40,9 @@ body {
   display: inline-block;
   vertical-align: top;
 }
+.main .aside .article {
+  margin-right: 0;
+}
 .content .article {
   width: 71%;
   margin-right: 6%;
@@ -147,7 +150,7 @@ body {
   font-size: 13px;
   line-height: 19px;
   color: #4e5050;
-  padding-bottom: 35px;
+  margin-bottom: 35px;
 }
 .content .list .item p{
   display: inline-block;
@@ -163,7 +166,7 @@ body {
   color: #38afe5;
   margin-right: 10px;
 }
-.aside .text::before {
+.content .aside .text::before {
   content: '\201c';
   font-size: 15px;
   color: #263555;
@@ -171,7 +174,7 @@ body {
   display: inline-block;
   margin-right: 5px;
 } 
-.aside .text::after {
+.content .aside .text::after {
   content: '\201d';
   font-size: 15px;
   color: #263555;
