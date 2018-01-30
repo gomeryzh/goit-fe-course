@@ -1,0 +1,120 @@
+body {
+  font-family: "arial", sans-serif;
+  background-image: url(../img/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* padding-top: 230px; */
+  padding-bottom: 270px;
+  height: 100vh;
+}
+.wrapper {
+  width: 1024px;
+  margin: auto;
+}
+main {
+  padding: 110px 70px 80px 60px;
+  background-color: #ffffff;
+  box-sizing: border-box;
+}
+:root {
+  --title-color: #263555;
+  --text-color: #4e5050;
+  --title-font-family: "Pathway Gothic One", sans-serif;
+  --title-font-size: 21px;
+  --subtitle-font-size: 15px;
+  --text-font-size: 13px;
+}
+.clearfix {
+  display: table;
+  content: "";
+  clear: both;
+}
+.profile .article-title {
+  font-size: var(--title-font-size);
+  font-family: var(--title-font-family);
+  color: var(--title-color);
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: left;
+  margin-bottom: 45px;
+}
+.profile .article-img {
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.profile .article-subtitle {
+  font-size: var(--subtitle-font-size);
+  color: var(--title-color);
+  line-height: 1.267;
+  text-align: left;
+  margin-bottom: 15px;
+}
+.profile .article-text {
+  font-size: var(--text-font-size);
+  color: var(--text-color);
+  line-height: 1.462;
+  text-align: left;
+}
+.profile .principles-title {
+  font-size: var(--title-font-size);
+  font-family: var(--title-font-family);
+  color: var(--title-color);
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: left;
+  margin-bottom: 45px;
+}
+.profile .principles .subtitle {
+  font-size: var(--subtitle-font-size);
+  color: var(--title-color);
+  line-height: 1.267;
+  text-align: left;
+  margin-bottom: 15px;
+}
+.profile .principles .text {
+  font-size: var(--text-font-size);
+  color: var(--text-color);
+  line-height: 1.462;
+  text-align: left;
+}
+.profile {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 50px;
+}
+.profile .article {
+  width: 70.8%;
+}
+.profile .principles {
+  width: 20%;
+}
+.profile .principles-list {
+  counter-reset: list;
+  list-style: none;
+}
+.profile .principles-list .list-item::before {
+  counter-increment: list;
+  content: counter(list);
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+  border-radius: 50%;
+  background-color: #38afe5;
+  color: #ffffff;
+  text-align: center;
+  line-height: 25px;
+}
+.profile .principles-list .list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+.profile .principles-list .list-item:last-child {
+    margin-bottom: 0;
+}
+.profile .principles-list .article {
+    width: calc(100% - 54px);
+}
+
