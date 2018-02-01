@@ -24,11 +24,6 @@ main {
   --subtitle-font-size: 15px;
   --text-font-size: 13px;
 }
-.clearfix {
-  display: table;
-  content: "";
-  clear: both;
-}
 .masterhead {
   margin-bottom: 100px;
   position: relative;
@@ -312,7 +307,7 @@ li.menu-item:nth-child(4) {
   background-color: rgb(56, 175, 229);
   position: fixed;
   left: 75%;
-  top: 77%;
+  top: 82%;
   padding: 5px;
   border-radius: 50%;
 }
