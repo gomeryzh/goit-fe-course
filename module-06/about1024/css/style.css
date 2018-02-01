@@ -306,6 +306,27 @@ li.menu-item:nth-child(4) {
   left: calc(50% - 15px);
   bottom: -15px;
 }
+.button {
+  width: 25px;
+  height: 25px;
+  background-color: rgb(56, 175, 229);
+  position: fixed;
+  left: 74%;
+  top: 64%;
+  padding: 5px;
+  border-radius: 50%;
+}
+.arrow {
+  display: block;
+  border-top: 1px solid rgb(255, 255, 255);
+  border-right: 1px solid rgb(255, 255, 255);
+  width: 30%;
+  height: 30%;
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
 .masterfoot {
   display: flex;
   justify-content: space-between;
@@ -321,15 +342,22 @@ li.menu-item:nth-child(4) {
   flex-wrap: wrap;
 }
 .masterfoot .information .list-item {
-  flex: 0 1 30%;
+  flex: 0 1 12%;
+  margin-right: 15%;
   /* height: 18px; */
-  align-items: flex-start;
+  /* align-items: flex-start; */
   
+}
+.masterfoot .information .list-item:nth-child(3n+3) {
+  margin-right: 0;
+}
+.masterfoot .information .list-item:nth-child(3n+1) {
+  margin-left: 10%;
 }
 .masterfoot .information .link {
   text-decoration: none;
-  display: block;
-  text-align: center;
+  /* display: block; */
+  text-align: left;
   font-size: 13.333px;
   font-family: 'Open Sans Condensed', sans-serif;
   color: rgb(255, 255, 255);
