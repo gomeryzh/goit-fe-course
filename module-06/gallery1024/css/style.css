@@ -3,8 +3,8 @@ body {
   background-image: url(../img/background.png);
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 100px;
-  padding-bottom: 270px;
+  padding-top: 235px;
+  padding-bottom: 25px;
   height: 100vh;
 }
 :root {
@@ -18,6 +18,10 @@ body {
 .wrapper {
   width: 1024px;
   margin: auto;
+}
+img {
+  width: 100%;
+  height: 100%;
 }
 main {
   padding: 95px 60px 140px 60px;
@@ -41,10 +45,8 @@ main {
   text-transform: uppercase;
   line-height: 1.2;
   margin-right: 55px;
-  /* display: inline-block; */
   position: relative;
   list-style: none;
-  /* text-align: left; */
 }
 .menu-item:nth-child(2):hover {
   color: var(--title-color);
@@ -85,7 +87,6 @@ li.menu-item:nth-child(4) {
   text-align: left;
   background-color: #ffffff;
 }
-
 .menu-item:hover > .submenu {
   display: block;
 }
@@ -105,6 +106,29 @@ li.menu-item:nth-child(4) {
   left: 50%;
   transform: translate(-50%, -50%);
   display: inline-block;
+  text-decoration: none;
+}
+.section {
+  width: 900px;
+  height: 550px;
+  display: flex;
+  min-height: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+.gallery .gallery-title {
+  font-size: 33px;
+  font-family: var(--title-font-family);
+  color: rgb(38, 53, 85);
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: left;
+  margin-bottom: 45px;
+}
+.gallery .gallery-article {
+  width: 290px;
+  height: 150px;
 }
 .logo span {
   text-align: center;
@@ -140,32 +164,26 @@ li.menu-item:nth-child(4) {
 }
 .masterfoot .information {
   width: 70%;
-  align-content: center;
+  align-content: space-around;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
 .masterfoot .information .list-item {
-  flex: 0 1 12%;
-  margin-right: 15%;
-  /* height: 18px; */
-  /* align-items: flex-start; */
-}
-.masterfoot .information .list-item:nth-child(3n + 3) {
-  margin-right: 0;
-}
-.masterfoot .information .list-item:nth-child(3n + 1) {
-  margin-left: 10%;
+  flex: 0 0 30%;
+  text-align: center;
 }
 .masterfoot .information .link {
   text-decoration: none;
-  /* display: block; */
+  display: inline-block;
+  width: 50%;
   text-align: left;
   font-size: 13.333px;
   font-family: "Open Sans Condensed", sans-serif;
   color: rgb(255, 255, 255);
   text-transform: uppercase;
   line-height: 0.875;
+  padding: 5px;
 }
 .masterfoot .contacts {
   width: 30%;
@@ -177,6 +195,7 @@ li.menu-item:nth-child(4) {
   text-transform: uppercase;
   line-height: 1.2;
   text-align: left;
+  margin-bottom: 4px;
 }
 .masterfoot .contacts .tel {
   display: block;
@@ -184,6 +203,7 @@ li.menu-item:nth-child(4) {
   color: rgb(255, 255, 255);
   line-height: 1.583;
   text-align: left;
+  margin-bottom: 2px;
 }
 .masterfoot .contacts .email {
   display: block;
@@ -232,4 +252,7 @@ li.menu-item:nth-child(4) {
   line-height: 1.5;
   text-align: center;
   text-decoration: none;
+}
+.privacy a:hover {
+  color: var(--text-color);
 }
