@@ -45,7 +45,7 @@
                 <ul class="gallery-list section">
                     <li class="list-item">
                         <div class="gallery-article">
-                            <img src="img/waterfall.jpg" alt="waterfall">
+                            <img src="img/waterfall.jpg" alt="waterfall" onclick="on()">
                         </div>
                     </li>
                     <li class="list-item">
@@ -89,6 +89,7 @@
                         </div>
                     </li>
                 </ul>
+                <!-- <button class="overlay-button"></button> -->
             </div>
             <div class="button">
                 <a class="arrow" href="#"></a>
@@ -133,6 +134,15 @@
             <a href="#">TemplateMonster.com</a>
         </p>
     </div>
+    <script>
+        function on() {
+            document.getElementsByClassName("overlay").style.display = "block";
+        }
+        
+        function off() {
+            document.getElementsByClassName("overlay").style.display = "none";
+        }
+        </script>
 </body>
 
 </html>

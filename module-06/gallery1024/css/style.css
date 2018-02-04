@@ -3,25 +3,22 @@ body {
   background-image: url(../img/background.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   padding-top: 235px;
   padding-bottom: 25px;
   height: 100vh;
 }
 :root {
-    --title-color: #263555;
-    --text-color: #4e5050;
-    --title-font-family: "Pathway Gothic One", sans-serif;
-    --title-font-size: 26px;
-    --subtitle-font-size: 15px;
-    --text-font-size: 13px;
-  }
+  --title-color: #263555;
+  --text-color: #4e5050;
+  --title-font-family: "Pathway Gothic One", sans-serif;
+  --title-font-size: 26px;
+  --subtitle-font-size: 15px;
+  --text-font-size: 13px;
+}
 .wrapper {
   width: 1024px;
   margin: auto;
-}
-img {
-  width: 100%;
-  height: 100%;
 }
 main {
   padding: 95px 60px 140px 60px;
@@ -117,6 +114,9 @@ li.menu-item:nth-child(4) {
   flex-wrap: wrap;
   align-content: space-between;
 }
+.gallery {
+  position: relative;
+}
 .gallery .gallery-title {
   font-size: 33px;
   font-family: var(--title-font-family);
@@ -126,9 +126,45 @@ li.menu-item:nth-child(4) {
   text-align: left;
   margin-bottom: 45px;
 }
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  object-fit: cover;
+}
 .gallery .gallery-article {
   width: 290px;
   height: 150px;
+}
+.gallery-list .list-item {
+  position: relative;
+  display: flex;
+}
+.gallery-list .list-item::after {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-image: url("https://image.flaticon.com/icons/svg/33/33287.svg");
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.gallery-list .list-item:hover::after {
+  display: block;
+  filter: opacity(0.7);
+  transition: 0.5s linear;
+  backface-visibility: hidden;
+}
+.gallery .gallery-article:hover > img {
+  filter: opacity(0.5);
+  transition: 0.5s linear;
+  backface-visibility: hidden;
 }
 .logo span {
   text-align: center;
