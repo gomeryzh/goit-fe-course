@@ -1,0 +1,46 @@
+@import url('reset.css');
+@import url('vars.css');
+@import url('fonts.css');
+.masthed .logo .logo-link {
+    font-size: 26px;
+    font-family: "Wisdom";
+    color: rgb(255, 255, 255);
+    line-height: 1.577;
+    text-align: left;   
+}
+.masthead .nav .nav-link {
+        font-size: 14px;
+        font-family: "Montserrat";
+        color: rgb(255, 255, 255);
+        text-transform: uppercase;
+        line-height: 2.929;
+        text-align: center;   
+}
+.hero .hero-caption {
+        font-size: 40px;
+        font-family: "DroidSerif";
+        color: rgb(255, 255, 255);
+        font-style: italic;
+        line-height: 1.2;
+        text-align: center;
+      
+}
+.hero .hero-title {
+        font-size: 75px;
+        font-family: "Montserrat";
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 1.2;
+        text-align: center; 
+}
+.hero .hero-btn-link {
+        font-size: 18px;
+        font-family: "Montserrat";
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 1.2;
+        text-align: center;
+      
+}
