@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,23 +8,38 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <div class="masthead-wrapper">
         <section class="container">
             <header class="masthead">
-                <div class="logo"><a href="#" class="logo-link">Golden</a></div>
+                <div class="logo">
+                    <a href="#" class="logo-link">Golden</a>
+                </div>
                 <ul class="nav">
-                    <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Portfolio</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Contact</a>
+                    </li>
                 </ul>
             </header>
             <div class="hero">
                 <h3 class="hero-caption">Welcome To Our Studio!</h3>
                 <h1 class="hero-title">It’s nice to Meet you</h1>
-                <div class="hero-btn"><a href="#" class="hero-btn-link">Tell Me More</a></div>
+                <div class="hero-btn">
+                    <a href="#" class="hero-btn-link">Tell Me More</a>
+                </div>
             </div>
         </section>
     </div>
@@ -35,41 +51,61 @@
             </div>
             <ul class="service-list">
                 <li class="service-card">
-                    <div class="card-img"><img src="img/basket-icon.jpg" alt="basket icon" class="card-icon"></div>
+                    <div class="card-img">
+                        <img src="img/basket-icon.jpg" alt="basket icon" class="card-icon">
+                    </div>
                     <h4 class="card-title">E-Commerce</h4>
-                    <p class="card-text">Proin iaculis purus consequat sem cure 
-                        digni ssim. Donec porttitora entum suscipit 
-                        aenean rhoncus posuere odio in tincidunt.</p>
+                    <p class="card-text">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere
+                        odio in tincidunt.</p>
                 </li>
                 <li class="service-card">
-                    <div class="card-img"><img src="img/laptop-icon.jpg" alt="laptop icon" class="card-icon"></div>
+                    <div class="card-img">
+                        <img src="img/laptop-icon.jpg" alt="laptop icon" class="card-icon">
+                    </div>
                     <h4 class="card-title">Responsive Web</h4>
-                    <p class="card-text">Proin iaculis purus consequat sem cure 
-                        digni ssim. Donec porttitora entum suscipit 
-                        aenean rhoncus posuere odio in tincidunt.</p>
+                    <p class="card-text">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere
+                        odio in tincidunt.</p>
                 </li>
                 <li class="service-card">
-                    <div class="card-img"><img src="img//locked-icon.jpg" alt="locked icon" class="card-icon"></div>
+                    <div class="card-img">
+                        <img src="img//locked-icon.jpg" alt="locked icon" class="card-icon">
+                    </div>
                     <h4 class="card-title">Web Security</h4>
-                    <p class="card-text">Proin iaculis purus consequat sem cure 
-                        digni ssim. Donec porttitora entum suscipit 
-                        aenean rhoncus posuere odio in tincidunt.</p>
+                    <p class="card-text">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere
+                        odio in tincidunt.</p>
                 </li>
             </ul>
         </section>
     </div>
-   <div class="contacts-wrapper">
-       <section class="contacts">
-           <div class="contacts-header">
-               <h2 class="contacts-title">Contact Us</h2>
-               <p class="contacts-subtitle">Proin iaculis purus consequat sem cure.</p>
-           </div>
-           <div class="inputs">
-               <div class="user-data"></div>
-               <div class="user-messege"></div>
-           </div>
-           <button class="messege-btn">Send Message</button>
-       </section>
-   </div>
+    <div class="contacts-wrapper">
+        <section class="contacts">
+            <div class="contacts-header">
+                <h2 class="contacts-title">Contact Us</h2>
+                <p class="contacts-subtitle">Proin iaculis purus consequat sem cure.</p>
+            </div>
+            <div class="inputs">
+                <form action="#" method="post">
+                    <div class="user-data">
+                        <label for="name">
+                            <input type="text" name="user-name" id="name" placeholder="your name &#8727;">
+                        </label>
+                        <label for="email">
+                            <input type="email" name="user-email" id="email" placeholder="your e-email &#8727;">
+                        </label>
+                        <label for="subject">
+                            <input type="text" name="subject" id="subject" placeholder="subject">
+                        </label>
+                    </div>
+                    <div class="user-messege">
+                        <label for="message">
+                            <input type="text" name="user-message" id="message" placeholder="your message &#8727;">
+                        </label>
+                    </div>
+                </form>
+            </div>
+            <button class="messege-btn">Send Message</button>
+        </section>
+    </div>
 </body>
+
 </html>

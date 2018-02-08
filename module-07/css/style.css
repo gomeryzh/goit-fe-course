@@ -215,3 +215,6 @@ a {
 .contacts .inputs {
   margin-bottom: 30px;
 }
+input {
+  box-sizing: border-box;
+}
