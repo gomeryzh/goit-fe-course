@@ -152,11 +152,26 @@ a {
   display: block;
   object-fit: cover;
 }
+.basket {
+  width: 40px;
+  height: 39px;
+}
+.laptop {
+  width: 41px;
+  height: 35px;
+}
+.locked {
+  width: 29px;
+  height: 38px;
+}
 .service-card .card-img {
   width: 70px;
   height: 70px;
   border: 2px solid var(--gold-color);
   border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .service-list .service-card {
   display: flex;
@@ -199,22 +214,24 @@ a {
   height: 65px;
   text-align: center;
   display: block;
-  margin-top: 25px;
-  align-self: center;
+  margin: auto;
+  font-size: 18px;
+  font-family: var(--main-font-family);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
 }
 .contacts {
   background-image: url("../img/map.png"), url("../img/map-bg.png");
   background-size: contain, cover;
   background-repeat: no-repeat, no-repeat;
   background-position: right 100px, center;
-  opacity: 0.302, 1;
-  padding: 105px 230px 95px 230px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  padding-top: 105px;
+  padding-bottom: 95px;
 }
 .contacts .inputs {
   margin: auto;
+  margin-bottom: 25px;
 }
 input {
   box-sizing: border-box;
@@ -228,13 +245,16 @@ input {
   background-color: var(--white-color);
   padding-top: 15px;
   padding-bottom: 15px;
+  padding-left: 15px;
   display: block;
   width: 100%;
 }
-.feedback .user-data input {
+.feedback .user-data .name,
+.email {
   margin-bottom: 25px;
 }
-.feedback input:placeholder {
+.feedback input::placeholder,
+textarea::placeholder {
   font-size: 14px;
   font-family: var(--main-font-family);
   color: rgb(187, 187, 187);
@@ -243,18 +263,27 @@ input {
   line-height: 1.2;
   text-align: left;
 }
-.contacts .feedback {
+.inputs {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   width: 950px;
-  margin: auto;
+  margin-bottom: 25px;
 }
-.inputs .user-data {
+.feedback .user-data {
   width: 47%;
-  background-color: blue;
+  height: 100%;
 }
-.inputs .user-message {
+.feedback .user-message {
   width: 47%;
-  background-color: blueviolet;
+  height: auto;
+}
+.user-message textarea {
+  width: 100%;
+  height: 100%;
+  resize: none;
+  overflow: hidden;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
 }

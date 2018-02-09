@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>homework-07</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -52,27 +52,27 @@
             <ul class="service-list">
                 <li class="service-card">
                     <div class="card-img">
-                        <img src="img/basket-icon.jpg" alt="basket icon" class="card-icon">
+                        <img src="img/basket-icon.jpg" alt="basket icon" class="card-icon basket">
                     </div>
                     <h4 class="card-title">E-Commerce</h4>
-                    <p class="card-text">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere
-                        odio in tincidunt.</p>
+                    <p class="card-text">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora
+                        entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
                 </li>
                 <li class="service-card">
                     <div class="card-img">
-                        <img src="img/laptop-icon.jpg" alt="laptop icon" class="card-icon">
+                        <img src="img/laptop-icon.jpg" alt="laptop icon" class="card-icon laptop">
                     </div>
                     <h4 class="card-title">Responsive Web</h4>
-                    <p class="card-text">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere
-                        odio in tincidunt.</p>
+                    <p class="card-text">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora
+                        entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
                 </li>
                 <li class="service-card">
                     <div class="card-img">
-                        <img src="img//locked-icon.jpg" alt="locked icon" class="card-icon">
+                        <img src="img//locked-icon.jpg" alt="locked icon" class="card-icon locked">
                     </div>
                     <h4 class="card-title">Web Security</h4>
-                    <p class="card-text">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere
-                        odio in tincidunt.</p>
+                    <p class="card-text">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora
+                        entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
                 </li>
             </ul>
         </section>
@@ -83,27 +83,30 @@
                 <h2 class="contacts-title">Contact Us</h2>
                 <p class="contacts-subtitle">Proin iaculis purus consequat sem cure.</p>
             </div>
-            <div class="inputs">
-                <form action="#" method="post" class="feedback">
+
+            <form action="#" method="post" class="feedback">
+                <div class="inputs">
                     <div class="user-data">
                         <label>
-                            <input type="text" name="user-name" placeholder="your name &#8727;">
+                            <input type="text" name="user-name" class="name" placeholder="your name &#42;" required>
                         </label>
                         <label>
-                            <input type="email" name="user-email" placeholder="your e-email &#8727;">
+                            <input type="email" name="user-email" class="email" placeholder="your e-email &#42;" required>
                         </label>
                         <label>
-                            <input type="text" name="subject" placeholder="subject">
+                            <input type="text" name="subject" class="subject" placeholder="subject" required>
                         </label>
                     </div>
                     <div class="user-message">
                         <label>
-                            <input type="text" name="user-message" placeholder="your message &#8727;">
+                            <textarea name="user-message" placeholder="your message &#42;"
+                                required></textarea>
                         </label>
                     </div>
-                    <button class="message-btn">Send Message</button>
-                </form>
-            </div>
+                </div>
+                <button class="message-btn">Send Message</button>
+            </form>
+
         </section>
     </div>
 </body>
