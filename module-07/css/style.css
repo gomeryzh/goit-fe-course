@@ -41,7 +41,7 @@ a {
 .masthead .logo {
   width: 7%;
 }
-.masthead .logo:hover> .logo-link {
+.masthead .logo:hover > .logo-link {
   color: var(--gold-color);
 }
 .masthead .logo .logo-link {
@@ -190,7 +190,7 @@ a {
   line-height: 1.2;
   text-align: center;
 }
-.messege-btn {
+.message-btn {
   border-radius: 3px;
   border: 0;
   color: var(--white-color);
@@ -199,7 +199,8 @@ a {
   height: 65px;
   text-align: center;
   display: block;
-  margin: auto;
+  margin-top: 25px;
+  align-self: center;
 }
 .contacts {
   background-image: url("../img/map.png"), url("../img/map-bg.png");
@@ -213,8 +214,47 @@ a {
   justify-content: space-between;
 }
 .contacts .inputs {
-  margin-bottom: 30px;
+  margin: auto;
 }
 input {
   box-sizing: border-box;
+  border: 0;
+}
+.user-data input {
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(204, 204, 204);
+  border-radius: 2px;
+  background-color: var(--white-color);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  display: block;
+  width: 100%;
+}
+.feedback .user-data input {
+  margin-bottom: 25px;
+}
+.feedback input:placeholder {
+  font-size: 14px;
+  font-family: var(--main-font-family);
+  color: rgb(187, 187, 187);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: left;
+}
+.contacts .feedback {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 950px;
+  margin: auto;
+}
+.inputs .user-data {
+  width: 47%;
+  background-color: blue;
+}
+.inputs .user-message {
+  width: 47%;
+  background-color: blueviolet;
 }
