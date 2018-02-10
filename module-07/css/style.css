@@ -22,10 +22,9 @@ a {
   background-image: url("../img/header-tint.png"), url("../img/header-img.jpg");
   background-size: cover, cover;
   background-repeat: no-repeat, no-repeat;
-  background-position: center, no-repeat;
-  opacity: 0.502, 1;
-  padding-top: 30px;
-  padding-bottom: 160px;
+  background-position: top;
+  padding-top: 1.875rem;
+  padding-bottom: 10rem;
 }
 .masthead {
   display: flex;
@@ -46,52 +45,56 @@ a {
 }
 .masthead .logo .logo-link {
   display: block;
-  font-size: 26px;
+  font-size: 1.625rem;
   font-family: "Wisdom Script AI";
   color: var(--white-color);
   line-height: 1.577;
   text-align: left;
 }
 .masthead .nav .nav-link {
-  font-size: 14px;
+  font-size: 0.875rem;
   font-family: var(--main-font-family);
   color: var(--white-color);
   text-transform: uppercase;
   line-height: 2.929;
   text-align: center;
 }
+.masthead .nav .nav-link:hover {
+  color: var(--gold-color);
+}
 .hero .hero-caption {
-  font-size: 40px;
+  font-size: var(--maintitle-font-size);
   font-family: var(--accent-font-family);
   color: var(--white-color);
   font-style: italic;
   line-height: 1.2;
   text-align: center;
-  margin-bottom: 25px;
+  margin-bottom: 1.563rem;
 }
 .hero .hero-title {
-  font-size: 75px;
+  font-size: 4.688rem;
   font-family: var(--main-font-family);
   color: var(--white-color);
   font-weight: bold;
   text-transform: uppercase;
   line-height: 1.2;
   text-align: center;
-  margin-bottom: 35px;
+  margin-bottom: 2.188rem;
 }
 .hero .hero-btn {
-  border-radius: 3px;
+  border-radius: 0.1875rem;
   background-color: var(--gold-color);
-  width: 240px;
-  height: 65px;
+  width: 15rem;
+  height: 4.063rem;
   text-align: center;
   display: flex;
   margin: auto;
+  transform: scale(1);
 }
 .hero .hero-btn-link {
   display: block;
   margin: auto;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-family: var(--main-font-family);
   color: var(--white-color);
   font-weight: bold;
@@ -99,16 +102,25 @@ a {
   line-height: 1.2;
   text-align: center;
 }
+.hero .hero-btn:hover {
+  transition: transform 1s ease;
+  transform: scale(1.1);
+  box-shadow: 0 0 10px 5px rgba(46, 44, 44, 0.7);
+}
+.hero .hero-btn:hover > .hero-btn-link {
+  transition: color 1s ease;
+  color: rgba(0, 0, 0, 0.7);
+}
 .services-wrapper {
-  width: 1400px;
+  width: 87.5rem;
   margin: auto;
 }
 .meta {
   background-color: var(--white-color);
-  padding: 120px 230px;
+  padding: 7.5rem 14.38rem;
 }
 .meta-header .meta-title {
-  font-size: 40px;
+  font-size: var(--maintitle-font-size);
   font-family: var(--main-font-family);
   color: var(--title-color);
   font-weight: bold;
@@ -117,7 +129,7 @@ a {
   text-align: center;
 }
 .meta-header .meta-subtitle {
-  font-size: 16px;
+  font-size: var(--subtitle-font-size);
   font-family: var(--accent-font-family);
   color: var(--text-color);
   font-style: italic;
@@ -125,7 +137,7 @@ a {
   text-align: center;
 }
 .meta-header {
-  margin-bottom: 80px;
+  margin-bottom: 5rem;
 }
 .service-list {
   display: flex;
@@ -135,14 +147,14 @@ a {
   width: 29%;
 }
 .service-card .card-title {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-family: var(--main-font-family);
   color: var(--title-color);
   font-weight: bold;
   line-height: 4.167;
 }
 .service-card .card-text {
-  font-size: 14px;
+  font-size: 0.875rem;
   font-family: "Roboto Slab", serif;
   color: var(--text-color);
   line-height: 1.2;
@@ -153,21 +165,21 @@ a {
   object-fit: cover;
 }
 .basket {
-  width: 40px;
-  height: 39px;
+  width: 2.5rem;
+  height: 2.5rem;
 }
 .laptop {
-  width: 41px;
-  height: 35px;
+  width: 2.563rem;
+  height: 2.188rem;
 }
 .locked {
-  width: 29px;
-  height: 38px;
+  width: 1.813rem;
+  height: 1.813rem;
 }
 .service-card .card-img {
-  width: 70px;
-  height: 70px;
-  border: 2px solid var(--gold-color);
+  width: 4.375rem;
+  height: 4.375rem;
+  border: 0.125rem solid var(--gold-color);
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -179,26 +191,30 @@ a {
   justify-content: space-between;
   align-items: center;
 }
+.service-list .service-card:hover .card-img {
+  transform: scale(1.5);
+  transition: 1s ease;
+}
 .contacts-wrapper {
-  width: 1400px;
+  width: 87.5rem;
   margin: auto;
 }
 .contacts-header {
   margin: auto;
-  margin-bottom: 75px;
+  margin-bottom: 4.688rem;
 }
 .contacts-header .contacts-title {
-  font-size: 40px;
+  font-size: var(--maintitle-font-size);
   font-family: var(--main-font-family);
   color: var(--white-color);
   font-weight: bold;
   text-transform: uppercase;
   line-height: 1.2;
   text-align: center;
-  margin-bottom: 12px;
+  margin-bottom: 0.75rem;
 }
 .contacts-header .contacts-subtitle {
-  font-size: 16px;
+  font-size: var(--subtitle-font-size);
   font-family: var(--accent-font-family);
   color: var(--text-color);
   font-style: italic;
@@ -206,32 +222,39 @@ a {
   text-align: center;
 }
 .message-btn {
-  border-radius: 3px;
+  border-radius: 0.1875rem;
   border: 0;
   color: var(--white-color);
   background-color: var(--gold-color);
-  width: 240px;
-  height: 65px;
+  width: 15rem;
+  height: 4.063rem;
   text-align: center;
   display: block;
   margin: auto;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-family: var(--main-font-family);
   font-weight: bold;
   text-transform: uppercase;
   line-height: 1.2;
+  transform: scale(1);
+}
+.message-btn:hover {
+  transition: color 1s ease, transform 1s ease;
+  transform: scale(1.1);
+  color: rgba(0, 0, 0, 0.7);
+  box-shadow: 0 0 10px 5px rgba(46, 44, 44, 0.7);
 }
 .contacts {
   background-image: url("../img/map.png"), url("../img/map-bg.png");
   background-size: contain, cover;
   background-repeat: no-repeat, no-repeat;
   background-position: right 100px, center;
-  padding-top: 105px;
-  padding-bottom: 95px;
+  padding-top: 6.563rem;
+  padding-bottom: 5.938rem;
 }
 .contacts .inputs {
   margin: auto;
-  margin-bottom: 25px;
+  margin-bottom: 1.563rem;
 }
 input {
   box-sizing: border-box;
@@ -239,23 +262,23 @@ input {
 }
 .user-data input {
   border-style: solid;
-  border-width: 1px;
+  border-width: 0.0625rem;
   border-color: rgb(204, 204, 204);
-  border-radius: 2px;
+  border-radius: 0.125rem;
   background-color: var(--white-color);
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-left: 15px;
+  padding-top: 0.9375rem;
+  padding-bottom: 0.9375rem;
+  padding-left: 0.9375rem;
   display: block;
   width: 100%;
 }
 .feedback .user-data .name,
 .email {
-  margin-bottom: 25px;
+  margin-bottom: 1.563rem;
 }
 .feedback input::placeholder,
 textarea::placeholder {
-  font-size: 14px;
+  font-size: 0.875;
   font-family: var(--main-font-family);
   color: rgb(187, 187, 187);
   font-weight: bold;
@@ -267,8 +290,8 @@ textarea::placeholder {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  width: 950px;
-  margin-bottom: 25px;
+  width: 59.38rem;
+  margin-bottom: 1.563rem;
 }
 .feedback .user-data {
   width: 47%;
@@ -283,7 +306,7 @@ textarea::placeholder {
   height: 100%;
   resize: none;
   overflow: hidden;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-left: 15px;
+  padding-top: 0.9375rem;
+  padding-bottom: 0.9375rem;
+  padding-left: 0.9375rem;
 }
