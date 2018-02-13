@@ -1,0 +1,39 @@
+->masthead-wrapper
+  -> section.header
+    -> masthead
+      -> logo
+        -> a.logo-link
+      -> ul.menu
+        -> a.menu-log-in
+        -> a.menu-sign-up
+    -> hero
+      -> h1.hero-title
+      -> h3.hero-subtitle
+      -> div.hero-btn
+        -> a.hero-btn-link
+
+->team-wrapper
+  -> section-meta
+    -> meta-header
+      -> h2.meta-header-title
+      
+    -> ul.team-list
+      -> li.team-list-item 
+        -> team-card  
+          -> img(picture)team-card-icon
+          -> h4.team-card-title
+          -> p.team-card-text
+      -> li.team-list-item 
+        -> team-card  
+          -> img(picture)team-card-icon
+          -> h4.team-card-title
+          -> p.team-card-text
+      -> li.team-list-item 
+        -> team-card  
+          -> img(picture)team-card-icon
+          -> h4.team-card-title
+          -> p.team-card-text
+    -> div.meta-btn
+      -> a.meta-btn-link
+      
+
