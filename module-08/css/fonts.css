@@ -16,25 +16,3 @@
     url('../fonts/montserrat-v12-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
     url('../fonts/montserrat-v12-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
-  /* droid serif-italic-latin */
-  @font-face {
-    font-family: "Droid Serif";
-    font-style: italic;
-    font-weight: 400;
-    src: url("//db.onlinewebfonts.com/t/31682d25f82942b5e25f8959a3c80b45.eot");
-    src: url("//db.onlinewebfonts.com/t/31682d25f82942b5e25f8959a3c80b45.eot?#iefix") format("embedded-opentype"),
-    url("//db.onlinewebfonts.com/t/31682d25f82942b5e25f8959a3c80b45.woff2") format("woff2"),
-    url("//db.onlinewebfonts.com/t/31682d25f82942b5e25f8959a3c80b45.woff") format("woff"),
-}
-/* Wisdom is Better regular-latin */
-@font-face {
-  font-family: "Wisdom Script AI";
-  font-style: normal;
-  font-weight: 400;
-  src: url("//db.onlinewebfonts.com/t/ce1bc33c294540dc1c7f3bb6b07b7ad3.eot");
-  src: url("//db.onlinewebfonts.com/t/ce1bc33c294540dc1c7f3bb6b07b7ad3.eot?#iefix") format("embedded-opentype"),
-  url("//db.onlinewebfonts.com/t/ce1bc33c294540dc1c7f3bb6b07b7ad3.woff2") format("woff2"),
-  url("//db.onlinewebfonts.com/t/ce1bc33c294540dc1c7f3bb6b07b7ad3.woff") format("woff"),
-  url("//db.onlinewebfonts.com/t/ce1bc33c294540dc1c7f3bb6b07b7ad3.ttf") format("truetype"),
-  url("//db.onlinewebfonts.com/t/ce1bc33c294540dc1c7f3bb6b07b7ad3.svg#Wisdom Script AI") format("svg");
-}
