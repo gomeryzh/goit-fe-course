@@ -35,10 +35,10 @@ a {
 .masthead ul.nav {
   display: flex;
   justify-content: space-around;
-  width: 36%;
+  flex-basis: 36%;
 }
 .masthead .logo {
-  width: 7%;
+  flex-basis: 7%;
 }
 .masthead .logo:hover > .logo-link {
   color: var(--gold-color);
@@ -81,35 +81,27 @@ a {
   text-align: center;
   margin-bottom: 2.188rem;
 }
-.hero .hero-btn {
-  border-radius: 0.1875rem;
-  background-color: var(--gold-color);
-  width: 15rem;
-  height: 4.063rem;
-  text-align: center;
-  display: flex;
-  margin: auto;
-  transform: scale(1);
-}
 .hero .hero-btn-link {
   display: block;
+  width: 15rem;
+  height: 4.063rem;
+  border-radius: 0.1875rem;
+  background-color: var(--gold-color);
   margin: auto;
+  text-align: center;
   font-size: 1.125rem;
   font-family: var(--main-font-family);
   color: var(--white-color);
   font-weight: bold;
   text-transform: uppercase;
-  line-height: 1.2;
-  text-align: center;
+  line-height: 4.063rem;
+  transform: scale(1);
 }
-.hero .hero-btn:hover {
-  transition: transform 1s ease;
+.hero .hero-btn-link:hover  {
+  transition: transform 1s ease, color 1s ease;
+  color: rgba(0, 0, 0, 0.7);
   transform: scale(1.1);
   box-shadow: 0 0 10px 5px rgba(46, 44, 44, 0.7);
-}
-.hero .hero-btn:hover > .hero-btn-link {
-  transition: color 1s ease;
-  color: rgba(0, 0, 0, 0.7);
 }
 .services-wrapper {
   width: 87.5rem;
@@ -144,7 +136,7 @@ a {
   justify-content: space-between;
 }
 .service-list .service-card {
-  width: 29%;
+  flex-basis: 29%;
 }
 .service-card .card-title {
   font-size: 1.125rem;
@@ -184,12 +176,10 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: auto;
 }
 .service-list .service-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  text-align: center;
 }
 .service-list .service-card:hover .card-img {
   transform: scale(1.5);
@@ -272,9 +262,11 @@ input {
   display: block;
   width: 100%;
 }
-.feedback .user-data .name,
-.email {
+.feedback .user-data label {
   margin-bottom: 1.563rem;
+}
+.feedback .user-data label:last-child {
+  margin-bottom: 0;
 }
 .feedback input::placeholder,
 textarea::placeholder {
@@ -289,16 +281,15 @@ textarea::placeholder {
 .inputs {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
   width: 59.38rem;
   margin-bottom: 1.563rem;
 }
 .feedback .user-data {
-  width: 47%;
+  flex-basis: 47%;
   height: 100%;
 }
 .feedback .user-message {
-  width: 47%;
+  flex-basis: 47%;
   height: auto;
 }
 .user-message textarea {
