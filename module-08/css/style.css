@@ -22,11 +22,10 @@ ul {
   margin: auto;
 }
 .header {
-  background-image: url('../img/header-bg.jpg');
+  background-image: url("../img/header-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
- 
   padding-top: 2.188rem;
   padding-bottom: 8.75rem;
 }
@@ -84,7 +83,7 @@ ul {
 }
 .hero .hero-subtitle {
   font-size: 1.125rem;
-  font-family: var(--accent-font-family);
+  font-family: var(--text-font-family);
   color: var(--white-color);
   line-height: 1.2;
   text-align: center;
@@ -98,7 +97,7 @@ ul {
   text-align: center;
   display: block;
   border-radius: 20px;
-  background-color: rgb(255, 78, 80);
+  background-color: var(--btn-color);
   width: 17.5rem;
   height: 2.5rem;
   margin: auto;
@@ -106,4 +105,67 @@ ul {
   text-transform: uppercase;
   line-height: 2.5rem;
 }
-
+.team-wrapper {
+  width: 20rem;
+  margin: auto;
+}
+.meta {
+  background-color: var(--white-color);
+  padding: 4.375rem 1.875rem 3.438rem 1.875rem;
+}
+.meta-header .meta-header-title {
+  font-size: 1.375rem;
+  font-family: var(--main-font-family);
+  color: var(--title-color);
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: center;
+}
+.team-card .team-card-icon {
+  width: 7.875rem;
+  height: 7.875rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+.team-card .team-card-title {
+  font-size: 0.875rem;
+  font-family: var(--main-font-family);
+  color: var(--title-color);
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 1.25rem;
+}
+.team-card .team-card-text {
+  font-size: 0.875rem;
+  font-family: var(--text-font-family);
+  color: var(--text-color);
+  line-height: 1.2;
+  text-align: center;
+}
+.team-card .team-card-text:last-child {
+  margin-bottom: 1.875rem;
+}
+.team-btn {
+  font-size: 0.875rem;
+  font-family: var(--text-font-family);
+  color: rgb(255, 78, 80);
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: center;
+  width: 17.5rem;
+  height: 2.5rem;
+  margin: auto;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 2.5rem;
+  display: block;
+  border-style: solid;
+  border-width: 2px;
+  border-color: var(--btn-color);
+  border-radius: 20px;
+  background-color: var(--white-color);
+  margin: auto;
+}
