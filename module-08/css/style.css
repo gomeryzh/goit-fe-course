@@ -18,7 +18,7 @@ ul {
   list-style: none;
 }
 .masthead-wrapper {
-  width: 20rem;
+  min-width: 320px;
   margin: auto;
 }
 .header {
@@ -26,30 +26,46 @@ ul {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
-  padding-top: 2.188rem;
+  padding-top: 1.25rem;
   padding-bottom: 8.75rem;
+  position: relative;
 }
+/* .header::after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  top: 0;
+} */
 .masthead {
   display: flex;
   flex-direction: column;
   text-align: center;
+  margin: auto;
 }
 .header .masthead .menu {
   order: -1;
   margin-bottom: 7.5rem;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
+  width: 10.375rem;
 }
 .masthead .menu-item {
-  flex-basis: 50%;
+  flex-basis: 40%;
 }
-.masthead .menu-item .menu-sign-up {
+.masthead .menu-item:last-child {
   border-style: solid;
   border-width: 2px;
   border-color: var(--white-color);
   background-color: rgba(26, 25, 21, 0);
   border-radius: 2rem;
+  flex-basis: 60%;
+  text-align: center;
   padding: 0.625rem 0.9375rem;
-  flex-basis: 5.625rem;
+  margin-left: 1rem;
 }
 .logo .logo-link {
   font-size: 1.25rem;
@@ -59,6 +75,8 @@ ul {
   text-transform: uppercase;
   line-height: 1.2;
   text-align: center;
+  display: block;
+  width: 100%;
 }
 .logo {
   margin-bottom: 2.5rem;
@@ -106,8 +124,9 @@ ul {
   line-height: 2.5rem;
 }
 .team-wrapper {
-  width: 20rem;
+  min-width: 320px;
   margin: auto;
+  
 }
 .meta {
   background-color: var(--white-color);
