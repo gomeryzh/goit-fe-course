@@ -18,19 +18,18 @@ ul {
   list-style: none;
 }
 .masthead-wrapper {
-  min-width: 320px;
-  margin: auto;
-}
-.header {
   background-image: url("../img/header-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
-  padding-top: 1.25rem;
-  padding-bottom: 8.75rem;
+  
   position: relative;
+  z-index: -1;
 }
-/* .header::after {
+.header {
+  padding: 1.25rem 0 8.75rem 0;
+}
+.masthead-wrapper::after {
   position: absolute;
   display: block;
   content: "";
@@ -38,7 +37,14 @@ ul {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   top: 0;
-} */
+  z-index: -1;
+}
+.container {
+  min-width: 20rem;
+  max-width: 90rem;
+  margin: auto;
+}
+
 .masthead {
   display: flex;
   flex-direction: column;
@@ -46,15 +52,13 @@ ul {
   margin: auto;
 }
 .header .masthead .menu {
-  order: -1;
-  margin-bottom: 7.5rem;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
+  margin: 0 auto 7.5rem;
   width: 10.375rem;
+
 }
 .masthead .menu-item {
-  flex-basis: 40%;
+  width: 40%;
+  display: inline-block;
 }
 .masthead .menu-item:last-child {
   border-style: solid;
@@ -62,10 +66,10 @@ ul {
   border-color: var(--white-color);
   background-color: rgba(26, 25, 21, 0);
   border-radius: 2rem;
-  flex-basis: 60%;
+  width: calc(60% - 4px);
   text-align: center;
   padding: 0.625rem 0.9375rem;
-  margin-left: 1rem;
+  /* margin-left: 1rem; */
 }
 .logo .logo-link {
   font-size: 1.25rem;
@@ -124,12 +128,9 @@ ul {
   line-height: 2.5rem;
 }
 .team-wrapper {
-  min-width: 320px;
-  margin: auto;
-  
+  background-color: var(--white-color);
 }
 .meta {
-  background-color: var(--white-color);
   padding: 4.375rem 1.875rem 3.438rem 1.875rem;
 }
 .meta-header .meta-header-title {
@@ -140,7 +141,7 @@ ul {
   line-height: 1.2;
   text-align: center;
 }
-.team-card .team-card-icon {
+.team-card-icon {
   width: 7.875rem;
   height: 7.875rem;
   margin-left: auto;
@@ -148,7 +149,7 @@ ul {
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
 }
-.team-card .team-card-title {
+.team-card-title {
   font-size: 0.875rem;
   font-family: var(--main-font-family);
   color: var(--title-color);
@@ -157,14 +158,14 @@ ul {
   text-align: center;
   margin-bottom: 1.25rem;
 }
-.team-card .team-card-text {
+.team-card-text {
   font-size: 0.875rem;
   font-family: var(--text-font-family);
   color: var(--text-color);
   line-height: 1.2;
   text-align: center;
 }
-.team-card .team-card-text:last-child {
+.team-card-text:last-child {
   margin-bottom: 1.875rem;
 }
 .team-btn {

@@ -1,7 +1,5 @@
 @media (min-width: 768px) {
-    .masthead-wrapper {
-        min-width: 768px;
-      }
+  
       .header {
         padding: 3.438rem 3.125rem 14.69rem 3.125rem;
       }
@@ -35,6 +33,7 @@
       .team-wrapper .team-list {
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
       }
       .team-list-item {
         flex-basis: 47.967%;
