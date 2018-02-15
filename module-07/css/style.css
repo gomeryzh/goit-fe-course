@@ -262,11 +262,11 @@ input {
   display: block;
   width: 100%;
 }
-.feedback .user-data label {
-  margin-bottom: 1.563rem;
+.user-data label {
+  display: block;
 }
-.feedback .user-data label:last-child {
-  margin-bottom: 0;
+.feedback .user-data label:not(:last-child) {
+  margin-bottom: 1.563rem;
 }
 .feedback input::placeholder,
 textarea::placeholder {
