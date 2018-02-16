@@ -3,7 +3,7 @@
 @import url("fonts.css");
 
 body {
-  background-color: #282828;
+  /* background-color: #282828; */
   min-height: 100vh;
 }
 img {
@@ -22,7 +22,6 @@ ul {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
-  
   position: relative;
   z-index: -1;
 }
@@ -53,23 +52,34 @@ ul {
 }
 .header .masthead .menu {
   margin: 0 auto 7.5rem;
-  width: 10.375rem;
-
+  width: 12.4rem;
 }
 .masthead .menu-item {
   width: 40%;
   display: inline-block;
+  border-style: solid;
+  border-width: 0.125rem;
+  border-color: transparent;
+  background-color: rgba(26, 25, 21, 0);
+  border-radius: 2rem;
+  text-align: center;
+  padding: 0.625rem 0.9375rem;
+}
+.masthead .menu-item:hover {
+  border-color: var(--white-color);
 }
 .masthead .menu-item:last-child {
   border-style: solid;
-  border-width: 2px;
-  border-color: var(--white-color);
+  border-width: 0.125rem;
+  border-color: transparent;
   background-color: rgba(26, 25, 21, 0);
   border-radius: 2rem;
-  width: calc(60% - 4px);
+  width: calc(60% - 0.25rem);
   text-align: center;
   padding: 0.625rem 0.9375rem;
-  /* margin-left: 1rem; */
+}
+.masthead .menu-item:last-child:hover {
+  border-color: var(--white-color);
 }
 .logo .logo-link {
   font-size: 1.25rem;
@@ -118,7 +128,7 @@ ul {
   font-weight: bold;
   text-align: center;
   display: block;
-  border-radius: 20px;
+  border-radius: 1.25rem;
   background-color: var(--btn-color);
   width: 17.5rem;
   height: 2.5rem;
@@ -149,6 +159,69 @@ ul {
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
 }
+figure {
+  position: relative;
+}
+.icon {
+  display: block;
+  position: absolute;
+  width: 2.188rem;
+  height: 2.188rem;
+  border: 0.1875rem solid var(--white-color);
+  border-radius: 50%;
+  background-color: rgb(255, 78, 80);
+  bottom: 38%;
+  right: 28%;
+}
+/* .team-list-item {
+  position: relative;
+}
+.team-list-item::before {
+  content: "";
+  width: 2.188rem;
+  height: 2.188rem;
+  border: 0.1875rem solid var(--white-color);
+  border-radius: 50%;
+  background-color: rgb(255, 78, 80);
+  position: absolute;
+  bottom: 38%;
+  right: 28%;
+}
+.team-list-item:nth-child(2)::before {
+  bottom: 42%;
+  right: 29%;
+  background-color: rgb(255, 165, 7);
+}
+.team-list-item:nth-child(3)::before {
+  background-color: rgb(28, 215, 173);
+}
+.team-list-item:nth-child(4)::before {
+  background-color: rgb(78, 115, 219);
+}
+.team-list-item::after {
+  content: "";
+  width: 1.063rem;
+  height: 1.063rem;
+  background-image: url('../img/tv-icon.png');
+  position: absolute;
+  bottom: 42.5%;
+  right: 31.5%;
+}
+.team-list-item:nth-child(2)::after {
+  width: 0.8125rem;
+  height: 1rem;
+  background-image: url('../img/bottle-icon.png');
+  position: absolute;
+  bottom: 46.5%;
+  right: 33%;
+}
+.team-list-item:nth-child(3)::after {
+  background-image: url('../img/coffee-icon.png');
+}
+.team-list-item:nth-child(4)::after {
+  height: 1rem;
+  background-image: url('../img/tv-icon.png');
+} */
 .team-card-title {
   font-size: 0.875rem;
   font-family: var(--main-font-family);
@@ -177,15 +250,14 @@ ul {
   text-align: center;
   width: 17.5rem;
   height: 2.5rem;
-  margin: auto;
   text-align: center;
   text-transform: uppercase;
   line-height: 2.5rem;
   display: block;
   border-style: solid;
-  border-width: 2px;
+  border-width: 0.125rem;
   border-color: var(--btn-color);
-  border-radius: 20px;
+  border-radius: 1.25rem;
   background-color: var(--white-color);
   margin: auto;
 }
