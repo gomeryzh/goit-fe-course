@@ -1,0 +1,224 @@
+@import url("reset.css");
+@import url("vars.css");
+@import url("fonts.css");
+body {
+  min-height: 100vh;
+}
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+.masthead-wrapper {
+  background-image: url("../img/header-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  position: relative;
+  z-index: -1;
+}
+.masthead-wrapper::after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  top: 0;
+  z-index: -1;
+}
+.container {
+  min-width: 20rem;
+  max-width: 90rem;
+  margin: auto;
+}
+.header {
+  padding: 1.25rem 0 8.75rem 0;
+}
+.masthead {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: auto;
+}
+.menu {
+  margin: 0 auto 7.5rem;
+  width: 12.4rem;
+}
+.menu-item {
+  width: 40%;
+  display: inline-block;
+  border-style: solid;
+  border-width: 0.125rem;
+  border-color: transparent;
+  background-color: rgba(26, 25, 21, 0);
+  border-radius: 2rem;
+  text-align: center;
+  padding: 0.625rem 0.9375rem;
+}
+.menu-item:hover {
+  border-color: var(--white-color);
+}
+.menu-item:last-child {
+  width: calc(60% - 0.25rem);
+}
+.menu a {
+  font-size: 0.875rem;
+  font-family: var(--main-font-family);
+  color: var(--white-color);
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: center;
+}
+.logo .logo-link {
+  font-size: 1.25rem;
+  font-family: var(--main-font-family);
+  color: var(--white-color);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+  display: block;
+  width: 100%;
+}
+.logo {
+  margin-bottom: 2.5rem;
+}
+.hero-title {
+  font-size: 1.875rem;
+  font-family: var(--main-font-family);
+  color: var(--white-color);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 1.25rem;
+}
+.hero-subtitle {
+  font-size: 1.125rem;
+  font-family: var(--text-font-family);
+  color: var(--white-color);
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 1.063rem;
+}
+.hero-btn {
+  font-size: 0.875rem;
+  font-family: var(--main-font-family);
+  color: var(--white-color);
+  font-weight: bold;
+  text-align: center;
+  display: block;
+  border-radius: 1.25rem;
+  background-color: var(--btn-color);
+  width: 17.5rem;
+  height: 2.5rem;
+  margin: auto;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 2.5rem;
+}
+.team-wrapper {
+  background-color: var(--white-color);
+}
+.meta {
+  padding: 4.375rem 1.875rem 3.438rem 1.875rem;
+}
+.meta-header-title {
+  font-size: 1.375rem;
+  font-family: var(--main-font-family);
+  color: var(--title-color);
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: center;
+}
+.card {
+  display: inline-block;
+  vertical-align: top;
+  max-width: 14.6875rem;
+}
+.card-img-top {
+  width: 7.875rem;
+  height: 7.875rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.figure-img {
+  position: relative;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+.card-icon {
+  display: block;
+  position: absolute;
+  width: 2.188rem;
+  height: 2.188rem;
+  border: 0.1875rem solid var(--white-color);
+  border-radius: 50%;
+  top: 72%;
+  left: 58%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tv {
+  background-color: rgb(255, 78, 80);
+}
+.bottle {
+  background-color: rgb(255, 165, 7);
+}
+.coffee {
+  background-color: rgb(28, 215, 173);
+}
+.letter {
+  background-color: rgb(78, 115, 219);
+}
+.icon {
+  width: 1rem;
+  height: 1rem;
+}
+.card-title {
+  font-size: 0.875rem;
+  font-family: var(--main-font-family);
+  color: var(--title-color);
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 1.25rem;
+}
+.card-text {
+  font-size: 0.875rem;
+  font-family: var(--text-font-family);
+  color: var(--text-color);
+  line-height: 1.2;
+  text-align: center;
+}
+.card-text:last-child {
+  margin-bottom: 1.875rem;
+}
+.team-btn {
+  font-size: 0.875rem;
+  font-family: var(--text-font-family);
+  color: rgb(255, 78, 80);
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: center;
+  width: 17.5rem;
+  height: 2.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 2.5rem;
+  display: block;
+  border-style: solid;
+  border-width: 0.125rem;
+  border-color: var(--btn-color);
+  border-radius: 1.25rem;
+  background-color: var(--white-color);
+  margin: auto;
+}
