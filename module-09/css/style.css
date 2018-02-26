@@ -12,9 +12,6 @@ img {
 a {
   text-decoration: none;
 }
-ul {
-  list-style: none;
-}
 .masthead-wrapper {
   background-image: url("../img/header-bg.jpg");
   background-size: cover;
@@ -40,13 +37,6 @@ ul {
 .header {
   padding: 1.25rem 0 8.75rem 0;
 }
- /* .masthead {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  margin: auto;
-} */
-
 .menu {
   margin: 0 auto 7.5rem;
   width: 12.4rem;
@@ -90,7 +80,6 @@ ul {
 .logo {
   margin-bottom: 2.5rem;
 }
-
 .hero-title {
   font-size: 1.875rem;
   font-family: var(--main-font-family);
@@ -118,8 +107,8 @@ ul {
   display: block;
   border-radius: 1.25rem;
   background-color: var(--btn-color);
-  width: 17.5rem;
-  height: 2.5rem;
+  max-width: 17.5rem;
+  max-height: 2.5rem;
   margin: auto;
   text-align: center;
   text-transform: uppercase;
@@ -140,10 +129,15 @@ ul {
   line-height: 1.2;
   text-align: center;
 }
+.mg-b-ul {
+  margin-bottom: 1.875rem;
+}
 .card {
-  display: inline-block;
-  vertical-align: top;
   max-width: 14.6875rem;
+  margin: 0 auto 1.875rem;
+}
+.card:last-child {
+  margin-bottom: 0;
 }
 .card-img-top {
   width: 7.875rem;
@@ -151,9 +145,11 @@ ul {
   margin-left: auto;
   margin-right: auto;
 }
+figure {
+  padding-top: 1.25rem;
+}
 .figure-img {
   position: relative;
-  margin-top: 1.25rem;
   margin-bottom: 1.25rem;
 }
 .card-icon {
@@ -201,9 +197,6 @@ ul {
   line-height: 1.2;
   text-align: center;
 }
-.card-text:last-child {
-  margin-bottom: 1.875rem;
-}
 .team-btn {
   font-size: 0.875rem;
   font-family: var(--text-font-family);
@@ -211,8 +204,8 @@ ul {
   font-weight: bold;
   line-height: 1.2;
   text-align: center;
-  width: 17.5rem;
-  height: 2.5rem;
+  max-width: 17.5rem;
+  max-height: 2.5rem;
   text-align: center;
   text-transform: uppercase;
   line-height: 2.5rem;
