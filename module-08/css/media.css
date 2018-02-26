@@ -1,11 +1,13 @@
 @media (min-width: 48rem) {
   .header {
-    padding: 3.438rem 3.125rem 14.69rem 3.125rem;
+    padding: 3.438rem 0 14.69rem 0;
   }
   .masthead {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 9.375rem;
+    align-items: center;
   }
   .logo {
     flex-basis: 23.4375%;
@@ -18,26 +20,28 @@
   }
   .hero .hero-title {
     margin-bottom: 2.5rem;
+    font-size: 3.375rem;
   }
   .hero .hero-subtitle {
     margin-bottom: 2.188rem;
   }
   .hero .hero-btn {
-    width: 15.5rem;
+    max-width: 15.5rem;
   }
   .team-wrapper {
     min-width: 48rem;
   }
   .meta {
-    padding: 4.688rem 8.625rem 2.5rem 8.625rem;
+    padding: 4.688rem 0 2.5rem 0;
   }
-  .meta-header .meta-header-title {
+  .meta-header {
     margin-bottom: 2.188rem;
   }
-  .team-wrapper .team-list {
+  .team-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-content: flex-start;
   }
   .team-list-item {
     flex-basis: 47.967%;
@@ -59,16 +63,27 @@
     margin-bottom: 2.5rem;
   }
   .team-btn {
-    width: 11.56rem;
+    max-width: 11.56rem;
   }
 }
-@media (min-width: 90rem) {
+@media (min-width: 48rem) and (max-width: 58.7499rem) {
+  .masthead {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+  .team-list {
+    max-width: 30.75rem;
+    margin: auto;
+  }
+}
+@media (min-width: 58.75rem) {
   .header {
-    padding: 3.438rem 15.63rem 14.69rem 15.63rem;
+    padding: 3.438rem 0 14.69rem 0;
   }
   .team-list {
     flex-wrap: nowrap;
     margin-bottom: 2.5rem;
+    align-items: flex-start;
   }
   .team-list-item {
     flex-basis: 23.4%;
@@ -88,7 +103,7 @@
   .hero .hero-title {
     font-size: 3.25rem;
     margin-bottom: 2.5rem;
-    width: 31.5rem;
+    min-width: 31.5rem;
     margin: 0 auto 2.5rem;
   }
   .hero .hero-subtitle {

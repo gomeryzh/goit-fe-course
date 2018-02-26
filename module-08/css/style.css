@@ -3,7 +3,6 @@
 @import url("fonts.css");
 
 body {
-  /* background-color: #282828; */
   min-height: 100vh;
 }
 img {
@@ -13,9 +12,6 @@ img {
 }
 a {
   text-decoration: none;
-}
-ul {
-  list-style: none;
 }
 .masthead-wrapper {
   background-image: url("../img/header-bg.jpg");
@@ -43,16 +39,15 @@ ul {
   max-width: 90rem;
   margin: auto;
 }
-
-.masthead {
+/* .masthead {
   display: flex;
   flex-direction: column;
   text-align: center;
   margin: auto;
-}
+} */
 .header .masthead .menu {
   margin: 0 auto 7.5rem;
-  width: 12.4rem;
+  max-width: 12.4rem;
 }
 .masthead .menu-item {
   width: 40%;
@@ -130,8 +125,8 @@ ul {
   display: block;
   border-radius: 1.25rem;
   background-color: var(--btn-color);
-  width: 17.5rem;
-  height: 2.5rem;
+  max-width: 17.5rem;
+  max-height: 2.5rem;
   margin: auto;
   text-align: center;
   text-transform: uppercase;
@@ -141,7 +136,7 @@ ul {
   background-color: var(--white-color);
 }
 .meta {
-  padding: 4.375rem 1.875rem 3.438rem 1.875rem;
+  padding: 4.375rem 0 3.438rem 0;
 }
 .meta-header .meta-header-title {
   font-size: 1.375rem;
@@ -151,10 +146,13 @@ ul {
   line-height: 1.2;
   text-align: center;
 }
+.meta-header {
+  margin-bottom: 1.25rem;
+}
 .team-list-item {
-  display: inline-block;
-  vertical-align: top;
+  margin: auto;
   max-width: 14.6875rem;
+  margin-bottom: 1.875rem;
 }
 .team-card-icon {
   width: 7.875rem;
@@ -162,9 +160,11 @@ ul {
   margin-left: auto;
   margin-right: auto;
 }
+.figure {
+  padding-top: 1.25rem;
+}
 .figure-img {
   position: relative;
-  margin-top: 1.25rem;
   margin-bottom: 1.25rem;
 }
 .icon {
@@ -212,9 +212,6 @@ ul {
   line-height: 1.2;
   text-align: center;
 }
-.team-card-text:last-child {
-  margin-bottom: 1.875rem;
-}
 .team-btn {
   font-size: 0.875rem;
   font-family: var(--text-font-family);
@@ -222,9 +219,8 @@ ul {
   font-weight: bold;
   line-height: 1.2;
   text-align: center;
-  width: 17.5rem;
-  height: 2.5rem;
-  text-align: center;
+  max-width: 17.5rem;
+  max-height: 2.5rem;
   text-transform: uppercase;
   line-height: 2.5rem;
   display: block;
