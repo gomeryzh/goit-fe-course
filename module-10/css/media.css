@@ -1,0 +1,5 @@
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx), (min-resolution: 192dpi) {
+  .masthead-wrapper {
+    background-image: url('../img/main-bg@2x.png');
+  }
+}
