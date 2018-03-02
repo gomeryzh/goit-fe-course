@@ -201,7 +201,7 @@ img {
   color: var(--title-color);
   line-height: 1.2;
   text-align: center;
-  flex-basis: 24.7%;
+  flex-basis: 24.7333%;
 }
 .author {
   color: var(--pink-color);
@@ -235,6 +235,7 @@ img {
   background-color: var(--aqua-color);
   min-width: 9.375rem;
   min-height: 2.5rem;
+  border: 0;
 }
 .footer {
   display: flex;
