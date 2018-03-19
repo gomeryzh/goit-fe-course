@@ -597,6 +597,7 @@ img {
 	padding-top: 96px;
 	width: 100%;
 	text-align: center;
+	margin-bottom: 26px;
 }
 
 .card__button {
@@ -609,6 +610,128 @@ img {
 	line-height: 3.231;
 	text-align: center;
 	border: 0;
+	background-color: #2a2a2a;
+	margin-bottom: 76px;
+}
+
+.card__timer {
+	display: flex;
+	justify-content: space-between;
+	width: 300px;
+	margin: auto;
+}
+
+.card__timer-item {
+	width: 70px;
+	height: 70px;
+	background-color: #3e3e3e;
+	font-size: 20px;
+	font-family: "Poppins";
+	color: white;
+	font-weight: bold;
+	text-transform: uppercase;
+	line-height: 0.833;
+	text-align: center;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.card__item-name {
+	font-size: 16.391px;
+	font-family: "Poppins";
+	color: #2a2a2a;
+	font-weight: bold;
+	line-height: 2.562;
+	text-align: center;
+}
+
+.card__stars {
+	width: 88px;
+	height: 18px;
+	background-color: #2a2a2a;
+	margin: auto;
+}
+
+.card__meta {
+	margin: 0 auto 20px;
+	padding-bottom: 18px;
+	width: 330px;
+	border-bottom: 1px solid #2a2a2a;
+	position: relative;
+}
+
+.card__meta::after {
+	content: "";
+	display: block;
+	position: absolute;
+	background-color: #d58e32;
+	left: 50%;
+	top: 100%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	width: 30px;
+	height: 4px;
+}
+
+.card__icons {
+	display: flex;
+	width: 120px;
+	justify-content: space-between;
+}
+
+.card__icon {
+	display: inline-block;
+	width: 36px;
+	height: 36px;
+	border: 1px solid #2a2a2a;
+}
+
+.card__icon--eye,
+.card__icon--love,
+.card__icon--arrows {
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.card__icon--eye {
+	background-image: url("../img/eye-icon.png");
+}
+
+.card__icon--love {
+	background-image: url("../img/love-icon.png");
+}
+
+.card__icon--arrows {
+	background-image: url("../img/arrows-icon.png");
+}
+
+.card__footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 16px;
+}
+
+.card__norm-price {
+	font-size: 14.342px;
+	font-family: "Poppins";
+	color: #a5a5a5;
+	line-height: 2.928;
+	text-align: center;
+	text-decoration: line-through;
+}
+
+.card__sale-price {
+	font-size: 18.439px;
+	font-family: "Poppins";
+	color: white;
+	font-weight: bold;
+	line-height: 2.278;
+	text-align: center;
+	display: inline-block;
+	padding: 12px;
 	background-color: #2a2a2a;
 }
 
