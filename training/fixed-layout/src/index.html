@@ -6,15 +6,92 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Placeholder title</title>
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.min.css">
 </head>
 
 <body>
+  <ul class="options">
+    <li class="options__item">
+      <a href="#" class="options__link">Usd</a>
+    </li>
+    <li class="options__item">
+      <a href="#" class="options__link">English</a>
+    </li>
+    <li class="options__item">
+      <a href="#" class="options__link">Help</a>
+    </li>
+  </ul>
+  <a href="#" class="logo">
+    <img src="img/logo.png" alt="logo" class="logo__img" width="165" height="77">
+  </a>
+  <a href="#" class="cart">
+    <span class="cart__icon">0</span>
+  </a>
+  <form action="#" class="search-form" method="POST">
+    <label class="search-form__category" for="category">
+      <select name="category" id="category"></select>
+    </label>
+    <label class="search-form__search" for="search">
+      <input type="text" name="search" id="search" placeholder="Search products...">
+    </label>
+  </form>
+  <ul class="site-nav">
+    <li class="site-nav__item">
+      <a href="#" class="site-nav__link">Home</a>
+    </li>
+    <li class="site-nav__item">
+      <a href="#" class="site-nav__link">Furniture</a>
+    </li>
+    <li class="site-nav__item">
+      <a href="#" class="site-nav__link">Chair</a>
+    </li>
+    <li class="site-nav__item">
+      <a href="#" class="site-nav__link">Table</a>
+    </li>
+    <li class="site-nav__item">
+      <a href="#" class="site-nav__link">Sofa</a>
+    </li>
+    <li class="site-nav__item">
+      <a href="#" class="site-nav__link">Bedroom</a>
+    </li>
+    <li class="site-nav__item">
+      <a href="#" class="site-nav__link">Blog</a>
+    </li>
+  </ul>
+  <div class="card">
+    <div class="card__header">
+      <h3 class="card__title">hot deals</h3>
+      <div class="card__slider">
+          <div class="card__slider-item"></div>
+          <div class="card__slider-item"></div>
+          <div class="card__slider-item"></div>
+        </div>
+    </div>
+    <div class="card__body">
+        <button class="card__button">add to cart</button>
+        <ul class="card__timer">
+          <li class="card__timer-item">25 days</li>
+          <li class="card__timer-item">10 hrs</li>
+          <li class="card__timer-item">45 mins</li>
+          <li class="card__timer-item">30 secs</li>
+        </ul>
+      </div>
+      <div class="card__meta">
+          <h4 class="card__item-name">Aenean Ru Bristique</h4>
+      </div>
+      <div class="card__footer">
+        <div class="card__icons">
+          <i class="card__icon"></i>
+          <i class="card__icon"></i>
+          <i class="card__icon"></i>
+        </div>
+        <span class="card__price">&#x24;350.00</span>
+        <span class="card__sale-price">&#x24;300.00</span>
+      </div>
+  </div>
+  
+
 </body>
-<ul class="options">
-  <li class="options__item"><a href="#" class="options__link">Usd</a></li>
-  <li class="options__item"><a href="#" class="options__link">English</a></li>
-  <li class="options__item"><a href="#" class="options__link">Help</a></li>
-</ul>
-<a href="#" class="logo"><img src="img/logo.png" alt="logo" class="logo__img" width="165" height="77"></a>
+
 </html>
