@@ -1,0 +1,133 @@
+form {
+  width: 262px;
+}
+.form__header {
+  margin-bottom: 30px;
+  border-bottom: 1px solid rgb(42, 42, 42);
+}
+.form__title {
+  font-size: 16px;
+  font-family: "Poppins";
+  color: rgb(42, 42, 42);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 2.357;
+  text-align: left;
+}
+.form__categories label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-left: 12px;
+  margin-bottom: 10px;
+  position: relative;
+  font-size: 13px;
+  font-family: "Poppins";
+  color: #2a2a2a;
+  line-height: 2.615;
+  text-align: left;
+  &::before {
+    @include pseudo;
+    width: 5px;
+    height: 5px;
+    border-top: 1px solid #2a2a2a;
+    border-right: 1px solid #2a2a2a;
+    border-bottom: 1px solid transparent;
+    border-left: 1px solid transparent;
+    top: 50%;
+    transform: rotate(45deg) translateY(-50%);
+    left: -3px;
+  }
+  &:hover {
+    padding-left: 22px;
+    color: rgb(213, 142, 50);
+  }
+  &:hover > span {
+    background-color: rgb(213, 142, 50);
+  }
+}
+label:hover label::before {
+  border-color: rgb(213, 142, 50);
+  margin-left: 22px;
+}
+.form__categories span {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-color: #2a2a2a;
+  color: #ffffff;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 24px;
+}
+.form__color label {
+  display: block;
+}
+.form__color label:nth-child(-n + 4) {
+  margin-bottom: 16px;
+}
+.form__color .form__item label {
+  padding-left: 24px;
+  position: relative;
+  font-size: 13px;
+  font-family: "Poppins";
+  color: #2a2a2a;
+  line-height: 2.231;
+  text-align: left;
+
+  &::before {
+    @include pseudo;
+    width: 12px;
+    height: 12px;
+    background-color: #fa5f66;
+    transform: translateY(50%);
+    top: 0;
+    left: 0;
+  }
+}
+.form__color .form__item:nth-child(2) > label::before {
+  background-color: #454545;
+}
+.form__color .form__item:nth-child(3) > label::before {
+  background-color: #e9e600;
+}
+.form__color .form__item:nth-child(2) > label::before {
+  background-color: #0190d3;
+}
+.form__color .form__item input[type="checkbox"]:checked + label {
+  color: rgb(213, 142, 50);
+  padding-left: 36px;
+}
+.form__color .form__item input[type="checkbox"]:checked + label::before {
+  margin-left: 12px;
+}
+.form__body {
+  display: flex;
+  flex-wrap: wrap;
+}
+.form__group .form__item {
+  margin-bottom: 12px;
+  font-size: 14px;
+  font-family: "Poppins";
+  color: rgb(149, 149, 149);
+  line-height: 3.214;
+  text-align: left;
+  position: relative;
+}
+.form__group .form__item label {
+  display: inline-block;
+  border: 1px solid #959595;
+  padding-left: 38px;
+  padding-right: 14px;
+}
+.form__group .form__item label {
+    &::before {
+        @include pseudo;
+        width: 16px;
+        height: 14px;
+        background-image: url('../img/label.png');
+        top: 0;
+        left: 0;
+      }
+}
